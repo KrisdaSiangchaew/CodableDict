@@ -11,7 +11,8 @@ struct ContentView: View {
     var body: some View {
         Text("Hello")
             .task {
-                DecodingService().decodeGlobalQuoteNestedJSON()
+//                DecodingService().decodeGlobalQuoteNestedJSON()
+                DecodingService().decodeSeriesSubset()
             }
     }
 }

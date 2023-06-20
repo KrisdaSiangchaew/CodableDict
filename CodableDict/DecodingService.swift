@@ -16,4 +16,14 @@ class DecodingService: ObservableObject {
             print("Error decoding: \(error.localizedDescription)")
         }
     }
+    
+    func decodeSeriesSubset() {
+        do {
+            let decodedData = try JSONDecoder().decode(SeriesDataByTimeSeries.self, from: seriesSubset!)
+            print(decodedData.seriesDataByDate?.date)
+            print(decodedData.seriesDataByDate?.seriesData.open)
+        } catch {
+            print("Error decoding: \(error.localizedDescription)")
+        }
+    }
 }

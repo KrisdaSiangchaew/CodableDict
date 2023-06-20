@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0164D5272A40A46300B67C3D /* TimeSeries.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0164D5262A40A46300B67C3D /* TimeSeries.swift */; };
+		0164D5292A40A54B00B67C3D /* SeriesData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0164D5282A40A54B00B67C3D /* SeriesData.swift */; };
+		0164D52C2A40A70400B67C3D /* DictionaryWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0164D52B2A40A70400B67C3D /* DictionaryWrapper.swift */; };
 		2CF153362A4028AC001129C6 /* CodableDictApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CF153352A4028AC001129C6 /* CodableDictApp.swift */; };
 		2CF153382A4028AC001129C6 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CF153372A4028AC001129C6 /* ContentView.swift */; };
 		2CF1533A2A4028AD001129C6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2CF153392A4028AD001129C6 /* Assets.xcassets */; };
@@ -17,6 +20,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0164D5262A40A46300B67C3D /* TimeSeries.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeSeries.swift; sourceTree = "<group>"; };
+		0164D5282A40A54B00B67C3D /* SeriesData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeriesData.swift; sourceTree = "<group>"; };
+		0164D52B2A40A70400B67C3D /* DictionaryWrapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DictionaryWrapper.swift; sourceTree = "<group>"; };
 		2CF153322A4028AC001129C6 /* CodableDict.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CodableDict.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2CF153352A4028AC001129C6 /* CodableDictApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodableDictApp.swift; sourceTree = "<group>"; };
 		2CF153372A4028AC001129C6 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -38,6 +44,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0164D52A2A40A6EB00B67C3D /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				0164D52B2A40A70400B67C3D /* DictionaryWrapper.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
 		2CF153292A4028AC001129C6 = {
 			isa = PBXGroup;
 			children = (
@@ -62,6 +76,7 @@
 				2CF153472A402E74001129C6 /* DecodingService.swift */,
 				2CF1534A2A405131001129C6 /* Models */,
 				2CF153492A402EC5001129C6 /* Data */,
+				0164D52A2A40A6EB00B67C3D /* Helpers */,
 				2CF153392A4028AD001129C6 /* Assets.xcassets */,
 				2CF1533B2A4028AD001129C6 /* Preview Content */,
 			);
@@ -80,6 +95,7 @@
 			isa = PBXGroup;
 			children = (
 				2CF153452A402CFB001129C6 /* GlobalQuote.swift */,
+				0164D5262A40A46300B67C3D /* TimeSeries.swift */,
 			);
 			path = Data;
 			sourceTree = "<group>";
@@ -88,6 +104,7 @@
 			isa = PBXGroup;
 			children = (
 				2CF1534B2A405150001129C6 /* GlobalQuoteNestedJson.swift */,
+				0164D5282A40A54B00B67C3D /* SeriesData.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -163,9 +180,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				2CF153382A4028AC001129C6 /* ContentView.swift in Sources */,
+				0164D52C2A40A70400B67C3D /* DictionaryWrapper.swift in Sources */,
+				0164D5272A40A46300B67C3D /* TimeSeries.swift in Sources */,
 				2CF153362A4028AC001129C6 /* CodableDictApp.swift in Sources */,
 				2CF153482A402E74001129C6 /* DecodingService.swift in Sources */,
 				2CF1534C2A405150001129C6 /* GlobalQuoteNestedJson.swift in Sources */,
+				0164D5292A40A54B00B67C3D /* SeriesData.swift in Sources */,
 				2CF153462A402CFB001129C6 /* GlobalQuote.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
